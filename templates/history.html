@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h1 class="app-title">history of all <br> Incidents </h1>
+            {% for inc in resolved %}
+            <div class="incident">
+
+                <h2 class="incident-name">{{ inc['fields']['summary'] }} <span class="species"></span></h2><br/>
+                <span class ="species">{{ inc['fields']['status']['description'] }}</span>
+                <span  style="float:right ;font-size: 1.5rem"  class="label label-info">Incident</span>
+                <br/><br/>
+                <span  style="float:right ;font-size: 1.5rem"  class="label label-success">Resolved</span>
+                <br/><br/>
+
+
+
+<!--                <p style="color: brown"><strong>Type:</strong> "Partial_Outage"</p>-->
+                <p align="right"><strong>{{ inc['fields']['created'].replace('.000+0330','').split("T")[0] }}</strong></p>
+                <p align="right"><strong>{{ inc['fields']['created'].replace('.000+0330','').split("T")[1] }}</strong></p>
+
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p> history of all incidents. in order to find latest incidents go to <a href="/status">this page</a></p>
+
+        <!--      <p><span class="glyphicon glyphicon-refresh"></span> <span id="last-update"></span></p>-->
+        <p class="credit">Powered by <a href="https://khallagh.com" target="_blank">Khallagh Borhan</a></p>
+    </div>
+</div>
+</body>
+</html>

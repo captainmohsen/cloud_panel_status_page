@@ -1,0 +1,680 @@
+html {
+    height: 100%;
+    padding-bottom: 0
+}
+
+body {
+    height: 100%;
+    font-family: "open sans", arial, sans-serif
+}
+
+.body {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 170px;
+    box-sizing: border-box
+}
+
+#maia-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+#maia-header {
+    min-height: 54px
+}
+
+#maia-signature {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    margin-top: 0
+}
+
+h1 {
+    font-weight: normal;
+    font-weight: 600;
+    font-size: 16px
+}
+
+h1 a, h1 a:hover, h1 a:active, h1 a:visited {
+    color: #444;
+    text-decoration: none
+}
+
+h1.page-header {
+    font-size: 18px;
+    margin-top: 20px
+}
+
+input[type=datetime-local]::after {
+    font-size: 90%;
+    color: grey;
+    margin-right: 5px;
+    content: "US/Pacific"
+}
+
+input[type=checkbox] {
+    margin-left: 8px
+}
+
+.body-container {
+    padding: 21px 44px
+}
+
+.subheader {
+    padding: 10px 15px;
+    color: white
+}
+
+.subheader .status {
+    font-weight: bold;
+    padding-left: 4px
+}
+
+.breadcrumbs {
+    padding: 0;
+    font-size: 11px
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    padding: 0;
+    margin: 12px 0 0 0
+}
+
+.breadcrumbs li a {
+    color: black;
+    text-decoration: none
+}
+
+.breadcrumbs li a:after {
+    content: "\00203a";
+    padding: 0 8px;
+    font-size: 18px;
+    line-height: 13px;
+    position: relative;
+    top: 1px
+}
+
+.breadcrumbs li:last-child a:after {
+    content: ""
+}
+
+.open-incident-bar-high {
+    background: #e04a3f
+}
+
+.open-incident-bar-medium {
+    background: #ff9800
+}
+
+.open-incident-bar-clear {
+    background: #0da960
+}
+
+#maia-main {
+    margin-top: 20px
+}
+
+ul {
+    list-style: none;
+    margin-left: 0
+}
+
+.dot {
+    fill: #db4437
+}
+
+table.updates {
+    margin-top: 30px;
+    width: 100%
+}
+
+table.updates h1 {
+    margin: 20px 8px 0 0;
+    display: inline-block
+}
+
+table.updates h1 a {
+    text-decoration: none
+}
+
+table.updates th {
+    padding: 0 0 4px 0;
+    text-transform: uppercase
+}
+
+table.updates td {
+    padding: 15px 5px 15px 0;
+    border-left: 0;
+    border-right: 0;
+    background: #fcfcfc
+}
+
+table.updates td.empty {
+    padding-left: 19px
+}
+
+table.updates td.date, table.updates td.time, table.updates td.link {
+    white-space: nowrap;
+    padding-right: 30px
+}
+
+table.updates td.description {
+    width: 100%
+}
+
+table.updates .next-row-desc {
+    display: none
+}
+
+table.updates p {
+    margin: 0 0 10px 0
+}
+
+table.updates p:last-child {
+    margin: 0
+}
+
+table.summary th {
+    text-transform: none;
+    padding: 15px 0
+}
+
+table.summary tr:first-child th {
+    padding-top: 0
+}
+
+.summary-bar {
+    padding-top: 8px;
+    margin-right: 0;
+    color: #777
+}
+
+.summary-bar li {
+    display: inline-block
+}
+
+.summary-bar .dot:after {
+    content: '\002022';
+    padding: 0 10px
+}
+
+.summary-bar .right {
+    float: right
+}
+
+.timeline-bar {
+    border-top: 1px solid #eee
+}
+
+.body-container h1 {
+    font-size: 1.4em;
+    line-height: 2em
+}
+
+.description h1 {
+    font-size: 1.6em
+}
+
+.description h2 {
+    font-size: 1.4em
+}
+
+.description h3 {
+    font-size: 1.2em;
+    text-decoration: underline
+}
+
+.description h4 {
+    font-size: 1.0em;
+    font-weight: bold
+}
+
+.update h3 {
+    font-size: 1.1em
+}
+
+.update p {
+    padding-left: 10px;
+    padding-top: 5px
+}
+
+ul.admin-nav {
+    list-style: none
+}
+
+ul.admin-nav li {
+    display: inline-block;
+    padding: 5px 2px
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: inline-block;
+    height: 0;
+    visibility: hidden
+}
+
+textarea {
+    border-bottom-color: rgb(217, 217, 217);
+    border-collapse: separate;
+    border-left-color: rgb(217, 217, 217);
+    border-radius: 1px;
+    border-right-color: rgb(217, 217, 217);
+    border-style: solid;
+    border-top-color: rgb(192, 192, 192);
+    border-width: 1px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    height: 100px;
+    margin: 2px 0 5px 0;
+    padding: 2px;
+    resize: vertical;
+    width: 600px
+}
+
+.kd-formbuttons input.kd-button {
+    height: 29px
+}
+
+ul.admin-list {
+    width: 800px
+}
+
+ul.admin-list li {
+    padding: 5px;
+    float: left;
+    margin-right: 20px;
+    line-height: 8px
+}
+
+.admin-service {
+    float: left;
+    margin: 10px 50px 5px 5px;
+    width: 100%
+}
+
+.axis text {
+    font: 10px sans-serif
+}
+
+.axis line, .axis path {
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke: #000
+}
+
+.kd-appbar .kd-appname {
+    width: auto
+}
+
+.outage, .outage:before, .outage:after {
+    color: rgb(255, 51, 0);
+    background-color: rgb(255, 51, 0)
+}
+
+.high, .high:before, .high:after {
+    color: rgb(221, 75, 57);
+    background-color: rgb(221, 75, 57);
+    background-image: url("../images/outage-30.png");
+    background-repeat: no-repeat;
+    background-size: 11px 11px;
+    background-position: 2px;
+    z-index: 10
+}
+
+.high.timeline-incident {
+    color: rgb(221, 75, 57);
+    background-color: rgb(221, 75, 57)
+}
+
+.medium, .medium:before, .medium:after {
+    color: rgb(255, 128, 0);
+    background-color: rgb(255, 128, 0);
+    background-image: url("../images/disruption-30.png");
+    background-repeat: no-repeat;
+    background-size: 11px 11px;
+    background-position: 2px;
+    z-index: 10
+}
+
+.medium.timeline-incident {
+    color: rgb(255, 128, 0);
+    background-color: rgb(255, 128, 0)
+}
+
+.disruption, .disruption:before, .disruption:after {
+    color: #fc0;
+    background-color: #fc0
+}
+
+.disruption.timeline-incident {
+    color: #fc0;
+    background-color: #fc0
+}
+
+.ok, .ok:before, .ok:after {
+    color: rgb(13, 169, 96);
+    background-color: rgb(13, 169, 96);
+    background-image: url("available-30.png");
+    background-repeat: no-repeat;
+    background-size: 11px 11px;
+    background-position: 2px
+}
+
+.ok.timeline-incident {
+    color: rgb(13, 169, 96);
+    background-color: rgb(13, 169, 96)
+}
+
+.inactive, .inactive:before, .inactive:after {
+    color: #bbb;
+    background-color: #bbb
+}
+
+.bubble, .bubble:before, .bubble:after {
+    padding: 0;
+    border-radius: 15px;
+    height: 15px;
+    min-width: 15px;
+    display: inline-block
+}
+
+td.day {
+    padding-left: 0;
+    padding-right: 0;
+    background: #fcfcfc
+}
+
+td.day a {
+    font-size: 9px
+}
+
+.timeline-incident {
+    margin: 0;
+    position: absolute;
+    top: 19px
+}
+
+.continues {
+    border-radius: 0;
+    background-image: none
+}
+
+.ends {
+    border-radius: 0 15px 15px 0
+}
+
+.ends:after, .only-today:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.begins {
+    border-radius: 15px 0 0 15px
+}
+
+.begins:before, .only-today:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.begins, .continues {
+    padding: 0 1px 0 0
+}
+
+.google-bar table, .google-bar tr, .google-bar td, .google-bar th {
+    background: none;
+    border: none
+}
+
+ul.key {
+    margin-bottom: 0
+}
+
+ul.key li {
+    display: inline-block;
+    margin-right: 5px
+}
+
+ul.key li .bubble {
+    margin-top: 4px;
+    margin-right: 4px
+}
+
+.timeline {
+    margin: 0 0 20px;
+    padding: 0
+}
+
+.timeline table {
+    width: 100%
+}
+
+.timeline th, .timeline td {
+    width: 10%;
+    position: relative
+}
+
+.timeline h1 {
+    margin: 0;
+    padding: 0
+}
+
+.service-status {
+    vertical-align: middle;
+    padding: 15px 0;
+    margin-left: 5px;
+    height: 1.5em;
+    white-space: nowrap;
+    width: 20%
+}
+
+.end-bubble {
+    position: absolute;
+    right: -7px;
+    top: 19px
+}
+
+.service-status-bubble .bubble, .updates .bubble {
+    margin-top: 4px;
+    margin-right: 4px
+}
+
+.service-tag {
+    background-color: transparent;
+    font-size: 11px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 9;
+    padding: 0px 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 400;
+    -webkit-font-smoothing: auto;
+    line-height: initial;
+    top: 4px
+}
+
+.service-tag span {
+    color: #ffffff;
+    background-color: #2f68fb;
+    margin: 0;
+    padding: 0 4px;
+    border-radius: 2px;
+    position: relative;
+    z-index: 5;
+    display: block;
+    line-height: 16px;
+    text-transform: uppercase
+}
+
+.service-tag:before, .service-tag:after {
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 1px;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.service-tag:before {
+    border-right: solid #2f68fb;
+    border-top: solid transparent;
+    border-bottom: solid transparent;
+    left: -1px;
+    border-width: 7px 7px 7px 0
+}
+
+.service-tag:after {
+    border-left: solid #2f68fb;
+    border-top: solid transparent;
+    border-bottom: solid transparent;
+    right: -1px;
+    border-width: 7px 0 7px 7px
+}
+
+.severity-bar {
+    margin: 10px 0 10px;
+    padding: 0
+}
+
+table.severity-bar {
+    width: 50%;
+    border: None;
+    border-collapse: collapse
+}
+
+.severity-bar td, th {
+    vertical-align: top;
+    text-align: center;
+    padding: 0;
+    border: None
+}
+
+.timeline th .date {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    padding: 0;
+    text-align: right
+}
+
+.timeline th .date .date-offset {
+    position: relative;
+    left: 8px
+}
+
+.timeline th .date.single .date-offset {
+    left: 4px
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+th, td {
+    color: #444;
+    border: 1px solid #eee;
+    padding: 15px 12px;
+    vertical-align: top;
+    background-color: #fff
+}
+
+th {
+    position: relative;
+    height: 1em;
+    color: #767676;
+    text-align: left;
+    font-weight: normal;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 0
+}
+
+td:first-child {
+    border-left: 0
+}
+
+td:last-child {
+    border-right: 0
+}
+
+tr, tr:nth-of-type(even) {
+    background-color: #fff
+}
+
+tr:first-child th {
+    border-top: 0
+}
+
+tr:last-child th {
+    border-bottom: 0
+}
+
+@media (max-width: 767px) {
+    .timeline .col1, .timeline .col2, .timeline .col3, .timeline .col4, .timeline .col5 {
+        display: none
+    }
+
+    .timeline .date .month {
+        display: none
+    }
+
+    table.incident .date {
+        width: 70px
+    }
+
+    table.incident .next-row-desc {
+        display: table-row
+    }
+
+    table.incident .next-row-desc td {
+        position: relative;
+        top: -8px
+    }
+
+    table.incident .description {
+        display: none
+    }
+}
+
+.goog-palette-cell {
+    border: 1px solid #666;
+    cursor: pointer;
+    height: 18px;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 18px
+}
+
+.goog-palette-cell th, td {
+    padding: 1px 1px
+}
+
+.message-bar {
+    background-color: #fff176;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin: 8px
+}
